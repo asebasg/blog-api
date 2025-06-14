@@ -52,14 +52,24 @@ async function main() {
       },
     ],
   });
+
+  await prisma.comment.createMany({
+    data: [
+      { content: 'Primer comentario', postId: 1, authorId: 1 },
+      { content: 'Segundo comentario', postId: 1, authorId: 2 },
+      { content: 'Tercer comentario', postId: 1, authorId: 3 },
+      { content: 'Cuarto comentario', postId: 1, authorId: 4 },
+      { content: 'Quinto comentario', postId: 1, authorId: 5 },
+    ],
+  });
   console.log('Base de datos poblada con exito');
 }
 
 main()
-.catch((e) => {
+  .catch((e) => {
     console.error(e);
     process.exit(1);
-})
-.finally(() => {
+  })
+  .finally(() => {
     prisma.$disconnect();
-});
+  });
