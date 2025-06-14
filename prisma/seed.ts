@@ -11,6 +11,8 @@ async function main() {
       { email: 'user1@example.com', name: 'User 1' },
       { email: 'user2@example.com', name: 'User 2' },
       { email: 'user3@example.com', name: 'User 3' },
+      { email: 'user4@example.com', name: 'User 4' },
+      { email: 'user5@example.com', name: 'User 5' },
     ],
     skipDuplicates: true,
   });
@@ -35,6 +37,18 @@ async function main() {
         content: 'Este es el contenido del tercer post.',
         published: true,
         authorId: 3,
+      },
+      {
+        title: 'Cuarto post',
+        content: 'Este es el contenido del cuarto post.',
+        published: true,
+        authorId: 4,
+      },
+      {
+        title: 'Quinto post',
+        content: 'Este es el contenido del quinto post.',
+        published: true,
+        authorId: 5,
       },
     ],
   });
