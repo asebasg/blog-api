@@ -4,7 +4,7 @@ import { CreateCommentDto } from './dto/create-comment.dto';
 import { UpdateCommentDto } from './dto/update-comment.dto';
 
 @Injectable()
-export class PostsService {
+export class CommentsService {
   constructor(private prisma: PrismaService) {}
 
   async create(CreateCommentDto: CreateCommentDto) {
