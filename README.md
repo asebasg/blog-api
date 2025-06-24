@@ -1,5 +1,5 @@
 # Blog API
-##### Desarrollado por [@asebasg, @Juanes-crypto].
+##### Desarrollado por [@asebasg, @Juanes-crypto, @diegoPonce2].
 
 ---
 
